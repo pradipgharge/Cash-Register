@@ -30,7 +30,7 @@ function clickHandlerOne(){
 }
 
 function clickHandlerTwo(){
-    if( Number(cashGiven.value)){
+    if( Number(cashGiven.value) > 0){
         if(Number(cashGiven.value) >= Number(billAmount.value))
         {
             var returnAmount = Number(cashGiven.value) - Number(billAmount.value);
