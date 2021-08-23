@@ -1,15 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap');
+
 *{
-    /* margin: 0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 90vh;
+    background-image: url(/images/cash2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .container{
-    display:flex;
-    flex-direction: column;
-    max-width: 50vh;
+    margin: 5rem auto;
+    padding: 0.8rem;
+    text-align: center;
+    max-width: 500px;
+    min-height: 200px;
+    background-color:rgb(243, 243, 213);
+    opacity: 0.9;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bill-amount-div{
+    margin: 0.4rem auto;
+    padding: 0.5rem;
+}
+
+.label{
+    display:block;
+    margin: 0.3rem auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem;
+    width: 70%;
+    height: 38px;
+    outline: none;
 }
 
 .button{
-    margin: 1rem auto;
+    margin: 0.8rem auto;
+    display:block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.3rem;
+    border: 2px solid rgb(236, 195, 118);
+    background-color:rgb(236, 188, 99);
+    color:black;
+}
+   
+.cash-given-div{
+    margin: 0.4rem auto;
+    padding: 0.5em;
+    display:none;
+}
+
+.show-message{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color:black;
+}
+
+.cash-return-div{
+    display:none;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#table-caption{
+   padding: 0.5rem; 
+   font-size: 20px;
+
+}
+
+.output-table{
+    table-layout: fixed;
+    width: 100%;
+   
+}
+
+th,td{
+    padding:0.4rem;
+    background-color:rgb(236, 195, 118);
+    color:black;
+    /* opacity: 0.9; */
+}
+
+#btn-check{
+    display:none;
 }
